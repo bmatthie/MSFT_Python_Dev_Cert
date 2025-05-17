@@ -21,7 +21,7 @@ def calculate_diameter_circle(radius: float) -> float:
     """
     
     if radius < 0.0:
-    	raise ValueError("Radius cannot be negative.")
+        raise ValueError("Radius cannot be negative.")
         
     return radius * 2.0
 # ***** End of function "calculate_diameter_circle" *****
@@ -31,7 +31,7 @@ def calculate_diameter_circle(radius: float) -> float:
 #
 radius = -0.1
 try:
-	diameter = calculate_diameter_circle(radius)                            # Risky code to be attempted.
+	diameter = calculate_diameter_circle(radius)                            # Risky code to be attempted!!
 except ValueError as e:
 	print("Radius: " + str(radius) + ", Error: " + str(e))                  # Executed on ValueError
 else:
